@@ -1,0 +1,11 @@
+<div class="about">
+  <a routerLink="about">About App</a>
+</div>
+<header>
+  <h1>{{ title }}</h1>
+  <app-button
+    color="{{showAddTask ? '#b76448' : '#2755d2'}}"
+    text="{{showAddTask ? 'Close' : 'Add'}}"
+    (btnClick)="toggleAddTask()"
+  ></app-button>
+</header>
